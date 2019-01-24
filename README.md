@@ -1,23 +1,23 @@
-# Quote generator con Nodejs y SQLite
+# Quote generator con Spring-boot y HSQLDB
 
-Generador de (mayormente falsas) citas utilizando Nodejs para el servidor y SQLite para almacenamiento.
+Generador de (mayormente falsas) citas utilizando Spring-boot para el servidor y HSQLDB para almacenamiento.
 
 ### Prerequisites
 
-Se necesita tener instalados Nodejs y SQLite3.
+Se necesita tener instalado Java JRE.
 
 ### Installing
 
 Para correr el servidor:
 
 ```
-node server.js
+java -jar quote-generator-0.0.1-SNAPSHOT
 ```
 
-Luego, en el navegador ingresar al localhost en el puerto 3000
+Luego, en el navegador ingresar al localhost en el puerto 8080
 
 ```
-localhost:3000
+localhost:8080
 ```
 
 Haciendo click en "New quote" se obtiene una nueva cita al azar de la db.
@@ -28,8 +28,9 @@ Haciendo click en "New quote" se obtiene una nueva cita al azar de la db.
 
 ## Built With
 
-* [Nodejs](https://nodejs.org/es/) - Entorno de ejecuci�n
-* [SQLite](https://www.sqlite.org/version3.html) - Database engine
+* [Spring boot](http://spring.io/projects/spring-boot) - Backend framework
+* [HSQLDB](http://hsqldb.org/) - Database engine
+* [Maven](https://maven.apache.org/) - Build manager
 
 ## Authors
 

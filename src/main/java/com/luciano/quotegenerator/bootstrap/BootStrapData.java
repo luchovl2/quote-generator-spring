@@ -46,6 +46,16 @@ public class BootStrapData implements CommandLineRunner
         quote5.setAuthor("Carlos Menem");
         repository.save(quote5);
 
+        Quote quote6 = new Quote();
+        quote6.setQuote("¿Mauricio? Buen pibe, me cae bárbaro.");
+        quote6.setAuthor("Cristina Kirchner");
+        repository.save(quote6);
+
+        Quote quote7 = new Quote();
+        quote7.setQuote("Me pica la nariz y la put...");
+        quote7.setAuthor("Stephen Hawking");
+        repository.save(quote7);
+
         System.out.println("The f*cking data is loaded, papá.");
     }
 }
