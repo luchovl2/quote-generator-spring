@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--<html xmlns:th="http://www.thymeleaf.org">-->
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
 
 <head>
     <meta charset="utf-8" />
@@ -24,6 +25,12 @@
 
         <button id="new-quote" class="btn mr-1" onClick="handleClick()">New quote</button>
         <a id="tweet-quote" class="btn" href="#" onClick="handleTweet()">Tweet quote</a>
+
+        <br>
+        <br>
+        <form th:action="@{/logout}" method="post">
+            <input type="submit" value="Sign Out" class="btn"/>
+        </form>
     </div>
 </div>
 <footer class="footer">by Luciano Gabbanelli</footer>
